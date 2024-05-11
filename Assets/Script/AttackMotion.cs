@@ -75,7 +75,7 @@ public class AttackMotion : MonoBehaviour // 검에다가 적용된 스크립트.
                 Ccol.isTrigger = true;
                 StartCoroutine(SwardMove(1));
 
-                hitboxPos.x = handPos.position.x - 0.22f;
+                hitboxPos.x = handPos.position.x - 0.4f;
                 hitboxPos.y = handPos.position.y - 0.3f;
                 Collider2D[] hit = Physics2D.OverlapBoxAll(hitboxPos, hitboxSize, 0);
                 foreach (Collider2D col in hit)
